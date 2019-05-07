@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Vlad Arkhipov](https://up.htmlacademy.ru/htmlcss/25/user/967177).
-* Наставник: `Андрей Константинов`.
+* Наставник: [Андрей Константинов](https://htmlacademy.ru/profile/id273267).
 
 ---
 
