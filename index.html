@@ -65,26 +65,42 @@
         <a href="#" class="button">Все популярные товары</a>
         <ul class="popular-products-list">
           <li class="popular-products-item">
-            <h3 class="product-item-name">Перфоратор BOSCH  BFG 9000</h3>
+            <div class="product-buttons-on-hover">
+              <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
+              <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
+            </div>
             <img src="" alt="" class="product-item-image">
+            <h3 class="product-item-name">Перфоратор BOSCH  BFG 9000</h3>
             <span class="old-price">32500 Р.</span>
             <button type="button" name="add-to-cart-button" class="price-button">25500 Р.</button>
           </li>
           <li class="popular-product-item">
-            <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
+            <div class="product-buttons-on-hover">
+              <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
+              <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
+            </div>
             <img src="" alt="" class="product-item-image">
+            <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
             <button type="button" name="add-to-cart-button" class="price-button">15500 Р.</button>
           </li>
           <li class="popular-product-item">
-            <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
+            <div class="product-buttons-on-hover">
+              <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
+              <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
+            </div>
             <img src="" alt="" class="product-item-image">
+            <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
             <button type="button" name="add-to-cart-button" class="price-button">25500 Р.</button>
           </li>
           <li class="popular-product-item new-product-item">
-            <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
+            <div class="product-buttons-on-hover">
+              <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
+              <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
+            </div>
             <img src="" alt="" class="product-item-image">
+            <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"> </span>
             <button type="button" name="add-to-cart-button" class="price-button">12500 Р.</button>
           </li>
@@ -131,7 +147,7 @@
         </ul>
       </section>
 
-      <section class"index-about-company">
+      <section class="index-about-company">
         <h2 class="visually-hidden">О компани</h2>
         <b class="headline-1">Компания «Техномарт»</b>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -144,7 +160,7 @@
         <a href="#" class="button">Подробнее о компании</a>
       </section>
 
-      <section class"index-about-company">
+      <section class="index-about-company">
         <h2 class="">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <div class="map">
@@ -156,27 +172,31 @@
     <footer>
       <div class="footer-first-row">
         <img class="nav-logo" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="" height="">
-        <ul class="main-navigation footer-navigation">
-          <li><a href="news.html">Компания</a></li>
-          <li><a href="catalog.html">Новости</a></li>
-          <li><a href="price.html">Каталог</a></li>
-          <li><a href="catalog.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        <nav class="main-menu-navigation">
+          <ul class="main-navigation footer-navigation">
+              <li><a href="news.html">Компания</a></li>
+              <li><a href="catalog.html">Новости</a></li>
+              <li><a href="price.html">Каталог</a></li>
+              <li><a href="catalog.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="footer-second-row">
         <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
           +7 (812) 555-05-55
         </address>
-        <ul class="secondary-navigation footer-navigation">
-          <li><a href="news.html">Материалы</a></li>
-          <li><a href="catalog.html">Техника</a></li>
-          <li><a href="price.html">Инструмент</a></li>
-          <li><a href="catalog.html">Спецпредложения</a></li>
-        </ul>
+        <nav class="main-categories-navigation">
+          <ul class="secondary-navigation footer-navigation">
+            <li><a href="category/materials.html">Материалы</a></li>
+            <li><a href="category/equipment.html">Техника</a></li>
+            <li><a href="category/tools.html">Инструмент</a></li>
+            <li><a href="category/special-offers.html">Спецпредложения</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="footer-third-row">
-        <span class="footer-copyright">© 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
+        <span class="footer-copyright">&#169; 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
         <ul class="footer-social-buttons">
           <li><a href="#" class="social-btn social-btn-vk">Вконтакте</a></li>
           <li><a href="#" class="social-btn social-btn-vk">Фейсбук</a></li>
@@ -188,7 +208,7 @@
         </div>
         <div class="footer-site-developer">
           <b>Разработано:</b>
-          <a href="https://htmlacademy.ru" class="footer-site-developer-link">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-site-developer-link">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
