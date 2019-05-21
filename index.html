@@ -45,8 +45,8 @@
         <div class="banner-discounts">Скидки <a href="#">На 350 товаров</a></div>
         <div class="banner-delivery">Доставка <a href="#">Бесплатно</a></div>
         <div class="banners-slider">
-          <button type="button" name="button-previous" class="previous-slide-button"></button>
-          <button type="button" name="button-next" class="next-slide-button"></button>
+          <button type="button" name="button-previous" class="previous-slide-button visually-hidden">Предыдущий баннер</button>
+          <button type="button" name="button-next" class="next-slide-button visually-hidden">Следующий баннер</button>
           <a href="catalog.html" class="banners-button">Открыть каталог</a>
           <div class="banner-slide banner-perforators">
             <h3>Перфораторы </h3>
@@ -68,9 +68,11 @@
               <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
               <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
             </div>
-            <img src="img/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH  BFG 9000" class="product-item-image">
-            <h3 class="product-item-name">Перфоратор BOSCH  BFG 9000</h3>
-            <span class="old-price">32500 Р.</span>
+            <a href="#">
+              <img src="img/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH  BFG 9000" class="product-item-image">
+              <h3 class="product-item-name">Перфоратор BOSCH  BFG 9000</h3>
+              <span class="old-price">32500 Р.</span>
+            </a>
             <button type="button" name="add-to-cart-button" class="price-button">25500 Р.</button>
           </li>
           <li class="popular-product-item">
@@ -78,9 +80,11 @@
               <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
               <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
             </div>
-            <img src="img/catalog/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
-            <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
-            <span class="old-price">22500 Р.</span>
+            <a href="#">
+              <img src="img/catalog/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
+              <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
+              <span class="old-price">22500 Р.</span>
+            </a>
             <button type="button" name="add-to-cart-button" class="price-button">15500 Р.</button>
           </li>
           <li class="popular-product-item">
@@ -88,9 +92,11 @@
               <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
               <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
             </div>
-            <img src="img/catalog/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
-            <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
-            <span class="old-price">30500 Р.</span>
+            <a href="#">
+              <img src="img/catalog/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
+              <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
+              <span class="old-price">30500 Р.</span>
+            </a>
             <button type="button" name="add-to-cart-button" class="price-button">25500 Р.</button>
           </li>
           <li class="popular-product-item new-product-item">
@@ -98,9 +104,11 @@
               <button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button>
               <button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button>
             </div>
-            <img src="img/catalog/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
-            <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
-            <span class="old-price"> </span>
+            <a href="#">
+              <img src="img/catalog/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
+              <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
+              <span class="old-price"> </span>
+            </a>
             <button type="button" name="add-to-cart-button" class="price-button">12500 Р.</button>
           </li>
         </ul>
@@ -124,23 +132,23 @@
       <section class="services">
         <h2 class="services-headline">Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="vertical-tab-slider tabs">
+        <ul class="vertical-tab-slider vertical-tab-slide-tabs">
           <li>Доставка</li>
           <li>Гарантия</li>
           <li>Кредит</li>
         </ul>
         <ul class="vertical-tab-slides">
-          <li class="vertical-tab-slide delivery">
+          <li class="vertical-tab-slide vertical-tab-slide-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           </li>
-          <li class="vertical-tab-slide guarantee">
+          <li class="vertical-tab-slide vertical-tab-slide-guarantee">
             <h3>Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            <p>Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
           </li>
-          <li class="vertical-tab-slide credit">
+          <li class="vertical-tab-slide vertical-tab-slide-credit">
             <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <p>Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.</p>
             <button type="button" name="credit-form-button" class="button">Отправить заявку</button>
           </li>
         </ul>
@@ -162,6 +170,7 @@
       <section class="index-about-company">
         <h2 class="">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <span class="visually-hidden">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         <div class="map">
           <!-- The map will appear here -->
         </div>
@@ -213,13 +222,21 @@
     </footer>
 
     <section class="modal modal-feedback">
-      <button type="button" name="modal-close-button" class="close-btn"></button>
-      <!-- The form will appear here -->
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+          <label>Ваше имя: <input type="text" name="name-surname" placeholder="Имя Фамилия"></label>
+          <label>Ваш e-mail: <input type="email" name="email" placeholder="email@example.com"></label>
+          <label><textarea name="textarea" placeholder="В свободной форме"></textarea></label>
+          <button type="submit">Отправить</button>
+        </form>
+      <button type="button" name="modal-close-button" class="close-btn visually-hidden">Закрыть</button>
     </section>
 
     <section class="modal map">
-      <button type="button" name="close-button" class="modal-close-btn"></button>
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <span class="visually-hidden">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <!-- The map will appear here -->
+      <button type="button" name="close-button" class="modal-close-btn visually-hidden">Закрыть</button>
     </section>
   </body>
 </html>
