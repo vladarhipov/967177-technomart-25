@@ -9,6 +9,7 @@
       <div class="header-top-row">
         <a href="index.html"><img class="nav-logo" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="109" height="19"></a>
         <div class="header-search">
+          <label for="header-search-id">Поиск </label> <input type="text" name="header-search" id="header-search-id" placeholder="Поиск">
         </div>
         <a href="#" class="header-bookmarks">Закладки <span class="header-bookmarks-number">0</span></a>
         <a href="#" class="header-cart">Корзина <span class="header-cart-number">0</span></a>
@@ -62,19 +63,18 @@
         <fieldset class="filter-vendors">
           <legend>Производители:</legend>
             <ul class="checkbox">
-              <li><label><input type="checkbox" name="BOSCH" value="BOSCH-on" checked>BOSCH</label></li>
-              <li><label><input type="checkbox" name="interskol" value="interskol-on">Интерскол</label></li>
-              <li><label><input type="checkbox" name="makita" value="makita-on" checked>Makita</label></li>
-              <li><label><input type="checkbox" name="dewalt" value="dewalt-on">DeWALt</label></li>
-              <li><label><input type="checkbox" name="hitachi" value="hitachi-on">Hitachi</label></li>
-              <li><label><input type="checkbox" name="american-crew" value="american-crew-on">American Crew</label></li>
+              <li><input type="checkbox" name="BOSCH" id="bosch-id" value="BOSCH-on" checked><label for="bosch-id">BOSCH</label></li>
+              <li><input type="checkbox" name="interskol" id="interskol-id" value="interskol-on"><label for="interskol-id">Интерскол</label></li>
+              <li><input type="checkbox" name="makita" id="makita-id" value="makita-on" checked><label for="makita-id">Makita</label></li>
+              <li><input type="checkbox" name="dewalt" id="dewalt-id" value="dewalt-on"><label for="dewalt-id">DeWALt</label></li>
+              <li><input type="checkbox" name="hitachi" id="hitachi-id" value="hitachi-on"><label for="hitachi-id">Hitachi</label></li>
             </ul>
         </fieldset>
         <fieldset class="filter-product-categories">
           <legend>Питание:</legend>
           <ul class="radio-button">
-            <li><label><input type="radio" name="charging-group" value="cable" checked>Сетевые</label></li>
-            <li><label><input type="radio" name="charging-group" value="battery">Аккумуляторные</label></li>
+            <li><input type="radio" name="charging-group" id="cable-id" value="cable" checked><label for="cable-id">Сетевые</label></li>
+            <li><input type="radio" name="charging-group" id="battery-id" value="battery"><label for="battery-id">Аккумуляторные</label></li>
           </ul>
         </fieldset>
         <button type="submit" name="show-button" class="btn">Показать</button>

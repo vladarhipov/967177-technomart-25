@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт — интернет-магазин  строительных материалов и инструментов для ремонта</title>
+    <title>Техномарт — интернет-магазин  строительных материалов  и инструментов для ремонта</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header>
       <div class="header-top-row">
         <img class="nav-logo" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="109" height="19">
         <div class="header-search">
+          <label for="header-search-id">Поиск </label> <input type="text" name="header-search" id="header-search-id" placeholder="Поиск">
         </div>
         <a href="#" class="header-bookmarks">Закладки <span class="header-bookmarks-number">0</span></a>
         <a href="#" class="header-cart">Корзина <span class="header-cart-number">0</span></a>
@@ -224,9 +226,9 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Написать нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-          <label>Ваше имя: <input type="text" name="name-surname" placeholder="Имя Фамилия"></label>
-          <label>Ваш e-mail: <input type="email" name="email" placeholder="email@example.com"></label>
-          <label><textarea name="textarea" placeholder="В свободной форме"></textarea></label>
+          <label for="name-sername-id">Ваше имя: </label><input type="text" name="name-surname" id="name-sername-id" placeholder="Имя Фамилия">
+          <label for="email-id">Ваш e-mail: </label><input type="email" name="email" id="email-id"  placeholder="email@example.com">
+          <label for="comment-id">Текст письма: </label><textarea name="textarea" id="comment-id" placeholder="В свободной форме"></textarea>
           <button type="submit">Отправить</button>
         </form>
       <button type="button" name="modal-close-button" class="close-btn visually-hidden">Закрыть</button>
