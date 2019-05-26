@@ -2,12 +2,12 @@
 /* Main Elements */
 
 html, body {
-  margin: 0px;
+  margin:0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
 }
 
 .bg-gray {
@@ -54,7 +54,10 @@ html, body {
 /* Buttons */
 
 .red-button {
-  color: white;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
   background-color: #ee3643;
   border: none;
   text-transform: uppercase;
@@ -70,7 +73,7 @@ html, body {
 }
 
 .border-button {
-  color: black;
+  color: #000;
   font-size: 13px;
   line-height: 18px;
   background: #ffffff;
@@ -92,7 +95,7 @@ html, body {
 .border-button.current {
   border: none;
   background-color: #ee3643;
-  color: white;
+  color: #fff;
 }
 
 
@@ -119,31 +122,31 @@ html, body {
 .header-search input {
   font-size: 17px;
   line-height: 18px;
-  color: white;
+  color: #fff;
   background-color: transparent;
   border: none;
 }
 
 .header-search input::placeholder {
-  color: white;
+  color: #fff;
 }
 
 .header-search input:focus::placeholder {
-  color: transparent;
+
 }
 
 .header-search input:hover {
-  color: black;
+  color: #000;
   background-color: #212a3a;
 }
 
 .header-search input:focus {
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
 }
 
 .header-top-row a {
-  color: white;
+  color: #fff;
   font-size: 17px;
   line-height: 18px;
   text-decoration: none;
@@ -208,8 +211,8 @@ a.cart-full:active {
  .enter-button {
    font-size: 21px;
    line-height: 21px;
-   color: black;
-   background-color: white;
+   color: #000;
+   background-color: #fff;
    text-decoration: none;
  }
 
@@ -224,8 +227,8 @@ a.cart-full:active {
  .user-entered {
    font-size: 21px;
    line-height: 21px;
-   color: black;
-   background-color: white;
+   color: #000;
+   background-color: #fff;
    text-decoration: none;
  }
 
@@ -239,7 +242,7 @@ a.cart-full:active {
 
 ul.header-account-menu {
    list-style: none;
-   padding: 0px;
+   padding:0;
 }
 
 .header-account-menu a {
@@ -262,14 +265,14 @@ ul.header-account-menu {
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
   list-style: none;
-  padding: 0px;
+  padding:0;
   font-size: 17px;
   line-height: 17px;
-  color: white;
+  color: #fff;
 }
 
 .header-main-navigation a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -288,28 +291,24 @@ ul.header-account-menu {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
-  padding: 0px;
-}
-
-.index-about-company .red-button {
-  font-size:
+  padding:0;
 }
 
 /* Catalog */
 
 .bread-crumbs {
   list-style: none;
-  padding: 0px;
+  padding:0;
   font-size: 13px;
   line-height: 18px;
-  color: black;
+  color: #000;
   text-transform: uppercase;
 }
 
 .bread-crumbs a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #000;
 }
 
 .inner-page-title h1 {
@@ -322,24 +321,24 @@ ul.header-account-menu {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-  color: black;
+  color: #000;
 }
 
 .catalog-filter fieldset {
   border: none;
-  padding: 0px;
+  padding:0;
 }
 
 .catalog-filter ul {
   list-style: none;
-  padding: 0px;
+  padding:0;
 }
 
 .catalog-filter label {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
-  color: black;
+  color: #000;
 }
 
 /* Catalog Items */
@@ -350,7 +349,7 @@ ul.header-account-menu {
 
 .catalog-list {
   list-style: none;
-  padding: 0px;
+  padding:0;
 }
 
 .catalog-product-item {
@@ -373,10 +372,13 @@ ul.header-account-menu {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: black;
+  color: #000;
 }
 
 .old-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
   color: #999;
   text-decoration: line-through;
 }
@@ -386,14 +388,14 @@ ul.header-account-menu {
   line-height: 18px;
   font-weight: 700;
   text-align: center;
-  color: white;
+  color: #fff;
   background-color: #ee3643;
   border: none;
 }
 
 .page-navigation {
   list-style: none;
-  padding: 0px;
+  padding:0;
 }
 
 /*  Footer */
@@ -401,19 +403,24 @@ ul.header-account-menu {
 .footer-address {
   font-size: 18px;
   line-height: 24px;
-  color: white;
+  color: #fff;
   font-style: normal;
+}
+
+.footer-address a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-main-navigation {
   list-style: none;
-  padding: 0px;
-  font-size: 17px;
-  line-height: 17px;
+  padding:0;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-main-navigation a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -428,9 +435,9 @@ ul.header-account-menu {
 
 .footer-secondary-navigation {
   list-style: none;
-  padding: 0px;
-  font-size: 17px;
-  line-height: 17px;
+  padding:0;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-secondary-navigation a {
@@ -450,7 +457,7 @@ ul.header-account-menu {
 .footer-third-row {
 
   background-color: #293449;
-  color: white;
+  color: #fff;
   font-size: 16px;
   line-height: 18px;
 }
@@ -476,7 +483,7 @@ ul.header-account-menu {
 .footer-social-buttons {
   display: none;
   list-style: none;
-  padding: 0px;
+  padding:0;
 }
 
 /* Modal Windows */
