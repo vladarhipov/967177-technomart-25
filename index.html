@@ -9,38 +9,50 @@
   </head>
   <body>
     <header class="cuprum-regular">
-      <div class="header-top-row">
-        <img class="nav-logo" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="109" height="19">
-        <form class="header-search">
-          <label for="header-search-id" class="visually-hidden">Поиск </label><input type="text" name="header-search" id="header-search-id" placeholder="Поиск:" class="cuprum-regular">
-        </form>
-        <a href="#" class="header-bookmarks">Закладки <span>0</span></a>
-        <a href="#" class="header-cart">Корзина <span>0</span></a>
-        <a href="#" class="header-order">Оформить заказ</a>
-      </div>
-      <div class="bg-gray">
-        <div class="header-middle-row">
-          <h1 class="header-company-description cuprum-italic">Интернет-магазин  строительных материалов и инструментов для ремонта</h1>
-          <a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
-          <address class="header-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </address>
-          <div class="header-account">
-            <a href="#" class="header-login enter-button">Войти</a>
-            <a href="#" class="header-sign-up enter-button">Регистрация</a>
+      <div class="bg-dark-blue">
+        <div class="header-top-row center-container">
+          <div class="header-top-row-left">
+            <div class="nav-logo">
+              <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="109" height="19">
+            </div>
+            <form class="header-search">
+              <label for="header-search-id" class="visually-hidden">Поиск </label><input type="text" name="header-search" id="header-search-id" placeholder="Поиск:" class="cuprum-regular">
+            </form>
+          </div>
+          <div class="header-top-row-right">
+            <a href="#" class="header-bookmarks">Закладки <span>0</span></a>
+            <a href="#" class="header-cart">Корзина <span>0</span></a>
+            <a href="#" class="header-order">Оформить заказ</a>
           </div>
         </div>
-        <nav class="header-bottom-row">
-          <ul class="header-main-navigation main-navigation">
-            <li><a href="">Главная</a></li>
-            <li><a href="company.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="promo.html">Спецпредложения</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
+      </div>
+      <div class="bg-gray">
+        <div class="center-container">
+          <div class="header-middle-row">
+            <h1 class="header-company-description cuprum-italic">Интернет-магазин  строительных материалов и инструментов для ремонта</h1>
+            <div class="header-contacts">
+              <a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
+              <address class="header-address">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </address>
+            </div>
+            <div class="header-account">
+              <a href="#" class="header-login enter-button">Войти</a>
+              <a href="#" class="header-sign-up enter-button">Регистрация</a>
+            </div>
+          </div>
+          <nav class="header-bottom-row">
+            <ul class="header-main-navigation main-navigation">
+              <li><a href="">Главная</a></li>
+              <li><a href="company.html">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="promo.html">Спецпредложения</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -137,7 +149,7 @@
         </ul>
       </section>
 
-      <section class="services">
+      <section class="services bg-gray">
         <h2 class="services-headline">Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="vertical-tab-slider vertical-tab-slide-tabs">
@@ -162,33 +174,38 @@
         </ul>
       </section>
 
-      <section class="index-about-company">
-        <h2 class="visually-hidden">О компани</h2>
-        <b class="headline-1">Компания «Техномарт»</b>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="company-partners-list">
-          <li class="company-partners-item">Деловые линии</li>
-          <li class="company-partners-item">Автотрейдинг</li>
-          <li class="company-partners-item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="red-button">Подробнее о компании</a>
-      </section>
+      <div class="center-container two-collumns">
+        <section class="index-about-company">
+            <h2 class="visually-hidden">О компани</h2>
+            <b class="headline-1">Компания «Техномарт»</b>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <ul class="company-partners-list">
+              <li class="company-partners-item">Деловые линии</li>
+              <li class="company-partners-item">Автотрейдинг</li>
+              <li class="company-partners-item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="#" class="red-button">Подробнее о компании</a>
+        </section>
 
-      <section class="index-about-company">
-        <h2 class="headline-1">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <span class="visually-hidden">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        <div class="map">
-          <!-- The map will appear here -->
-        </div>
-        <button type="button" name="write-us-form-button" class="red-button">Заблудились? Напишите нам!</button>
-      </section>
+        <section class="index-contacts">
+          <h2 class="headline-1">Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <span class="visually-hidden">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <div class="map">
+            <!-- The map will appear here -->
+          </div>
+          <button type="button" name="write-us-form-button" class="red-button">Заблудились? Напишите нам!</button>
+        </section>
+      </div>
     </main>
-    <footer>
+
+    <footer class="cuprum-regular bg-dark-blue">
       <div class="bg-blue">
-        <div class="footer-first-row">
-          <img class="nav-logo" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="109" height="19">
+        <div class="footer-first-row center-container">
+          <div class="nav-logo">
+            <img class="" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="109" height="19">
+          </div>
           <nav class="">
             <ul class="footer-main-navigation">
                 <li><a href="news.html">Компания</a></li>
@@ -199,7 +216,7 @@
             </ul>
           </nav>
         </div>
-        <div class="footer-second-row">
+        <div class="footer-second-row center-container">
           <address class="footer-address cuprum-regular">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </address>
@@ -213,7 +230,7 @@
           </nav>
         </div>
       </div>
-      <div class="footer-third-row cuprum-regular">
+      <div class="footer-third-row center-container">
         <span class="footer-copyright">&#169; 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
         <ul class="footer-social-buttons">
           <li><a href="#" class="social-btn social-btn-vk">Вконтакте</a></li>
