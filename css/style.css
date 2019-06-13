@@ -7,8 +7,8 @@ html, body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 *, *::before, *::after {
@@ -87,7 +87,7 @@ input[type="radio"].visually-hidden {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   background-color: #ee3643;
   border: none;
   text-transform: uppercase;
@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
 }
 
 .border-button {
-  color: #000;
+  color: #000000;
   font-size: 13px;
   line-height: 18px;
   background: #ffffff;
@@ -125,7 +125,7 @@ input[type="radio"].visually-hidden {
 .border-button.current {
   border: none;
   background-color: #ee3643;
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -289,23 +289,23 @@ a.nav-logo::before {
   padding-left: 48px;
   font-size: 17px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
   border: none;
 }
 
 .header-search input::placeholder {
-  color: #fff;
+  color: #ffffff;
 }
 
 .header-search input:hover {
-  color: #000;
+  color: #ffffff;
   background-color: #212a3a;
 }
 
 .header-search input:focus {
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .header-search button {
@@ -341,7 +341,7 @@ a.nav-logo::before {
 
 .header-search-input:focus ~ svg {
   fill: #ee3643;
-  opacity: 1;
+  z-index: 1;
 }
 
 
@@ -558,7 +558,7 @@ ul.header-account-menu {
   margin: 0;
   font-size: 17px;
   line-height: 17px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .header-main-navigation li {
@@ -566,7 +566,7 @@ ul.header-account-menu {
 }
 
 .header-main-navigation a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   padding: 20px 30px;
 }
@@ -668,7 +668,7 @@ ul.header-account-menu {
   margin: 25px 0;
   font-size: 13px;
   line-height: 18px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -690,7 +690,7 @@ ul.header-account-menu {
 .bread-crumbs a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 .inner-page-title h1 {
@@ -739,7 +739,7 @@ ul.header-account-menu {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   margin: 0;
   padding: 0;
   margin-bottom: 17px;
@@ -763,7 +763,7 @@ ul.header-account-menu {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   padding-left: 35px;
   padding-top: 3px;
 }
@@ -875,7 +875,7 @@ ul.header-account-menu {
   width: 218px;
   margin-bottom: 20px;
   margin-left: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   outline: 1px solid #E5E5E5;
   text-align: center;
 }
@@ -1000,7 +1000,7 @@ ul.header-account-menu {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   margin-block-start: 0;
   margin-block-end: 0;
   margin: 10px 15px;
@@ -1011,7 +1011,7 @@ ul.header-account-menu {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: #999;
+  color: #999999;
   text-decoration: line-through;
   margin: 10px 15px;
 }
@@ -1024,7 +1024,7 @@ ul.header-account-menu {
   line-height: 18px;
   font-weight: 700;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   background-color: #ee3643;
   border: none;
   margin: 10px 20px 20px 10px;
@@ -1099,7 +1099,7 @@ img.footer-big-nav-logo {
 }
 
 .footer-main-navigation a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1124,7 +1124,7 @@ img.footer-big-nav-logo {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
   font-style: normal;
 }
 
@@ -1161,7 +1161,7 @@ img.footer-big-nav-logo {
   justify-content: space-between;
   padding-top: 35px;
   padding-bottom: 30px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 18px;
 }
@@ -1213,5 +1213,128 @@ img.footer-big-nav-logo {
 /* Modal Windows */
 
 .modal {
-  display: none;
+  position: fixed;
+}
+
+.write-us {
+  display: none /* flex */;
+  width: 620px;
+  height: 430px;
+  top: 50%;
+  left: 50%;
+  margin-left: -310px;
+  margin-top: -215px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75), inset 0 7px 0 #ee3643;
+}
+
+.close-modal-button {
+  display: block;
+  position: absolute;
+  content: '';
+  background: url("../img/red-cross.svg") no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+  top: 16px;
+  right: 9px;
+}
+
+.write-us form {
+  position: relative;
+}
+
+.form-inputs-wrapper {
+  margin: 50px 80px 110px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-us .half-width-collumn {
+  display: inline-block;
+  width: 220px;
+}
+
+.write-us .half-width-collumn:last-child {
+  margin-right: 0;
+}
+
+.write-us .full-width-collumn {
+  width: 100%;
+}
+
+.write-us textarea, input, label, button {
+  width: 100%;
+}
+
+.write-us label {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.write-us input, textarea {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 7px 15px 9px 15px;
+  margin: 0;
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.write-us input {
+  min-height: 38px;
+}
+
+.write-us textarea {
+  min-height: 114px;
+}
+
+.write-us input::placeholder, textarea::placeholder {
+  color: #a9a9a9;
+}
+
+
+
+.write-us .field {
+  margin-bottom: 20px;
+}
+
+.bottom-gray-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 80px;
+  background-color: #f4f4f4;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+}
+
+.write-us .red-button {
+  padding: 10px;
+  min-height: 38px;
+}
+
+.modal-map {
+  display: block;
+  width: 940px;
+  height: 446px;
+  top: 50%;
+  left: 50%;
+  margin-left: -470px;
+  margin-top: -223px;
+  background: #ffffff;
+  box-shadow: 0 0 16px rgba(47, 42, 43, 0.5);
+}
+
+.modal-map img {
+  width: 940px;
+  height: 446px;
 }
