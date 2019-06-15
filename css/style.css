@@ -1213,11 +1213,27 @@ img.footer-big-nav-logo {
 /* Modal Windows */
 
 .modal {
+  display: none;
   position: fixed;
 }
 
+.modal-show {
+  display: flex;
+  animation-name: fade;
+  animation-duration: 0.3s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.red-border {
+  border-color: red !important;
+}
+
 .write-us {
-  display: none /* flex */;
+  z-index: 500;
   width: 620px;
   height: 430px;
   top: 50%;
@@ -1298,8 +1314,6 @@ img.footer-big-nav-logo {
   color: #a9a9a9;
 }
 
-
-
 .write-us .field {
   margin-bottom: 20px;
 }
@@ -1323,7 +1337,7 @@ img.footer-big-nav-logo {
 }
 
 .modal-map {
-  display: block;
+  z-index: 500;
   width: 940px;
   height: 446px;
   top: 50%;
@@ -1337,4 +1351,15 @@ img.footer-big-nav-logo {
 .modal-map img {
   width: 940px;
   height: 446px;
+}
+
+@keyframes fade {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
 }
