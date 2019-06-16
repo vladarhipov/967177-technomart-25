@@ -92,6 +92,9 @@ input[type="radio"].visually-hidden {
   border: none;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 10px;
+  min-height: 38px;
+  text-align: center;
 }
 
 .red-button:hover {
@@ -624,8 +627,6 @@ ul.header-account-menu {
 .index-about-company .red-button {
   display: inline-block;
   min-width: 220px;
-  min-height: 38px;
-  padding: 10px;
   text-align: center;
 }
 
@@ -634,7 +635,6 @@ ul.header-account-menu {
   width: 100%;
   min-width: 220px;
   min-height: 38px;
-  padding: 10px;
   text-align: center;
 }
 
@@ -844,6 +844,11 @@ ul.header-account-menu {
 
 .charging-radio input:disabled + label {
   opacity: 0.4;
+}
+
+.catalog-filter button.border-button {
+  margin-top: 60px;
+  width: 140px;
 }
 
 /* Sort */
@@ -1210,7 +1215,7 @@ img.footer-big-nav-logo {
   background-color: #ee3643;
 }
 
-/* Modal Windows */
+/* Modal Index */
 
 .modal {
   display: none;
@@ -1261,14 +1266,14 @@ img.footer-big-nav-logo {
   position: relative;
 }
 
-.form-inputs-wrapper {
+.modal-content-wrapper {
   margin: 50px 80px 110px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.write-us .half-width-collumn {
+.half-width-collumn {
   display: inline-block;
   width: 220px;
 }
@@ -1331,11 +1336,6 @@ img.footer-big-nav-logo {
   align-items: center;
 }
 
-.write-us .red-button {
-  padding: 10px;
-  min-height: 38px;
-}
-
 .modal-map {
   z-index: 500;
   width: 940px;
@@ -1352,6 +1352,67 @@ img.footer-big-nav-logo {
   width: 940px;
   height: 446px;
 }
+
+/* Modal Catalog */
+
+.cart-popup {
+  z-index: 500;
+  width: 620px;
+  height: 290px;
+  top: 50%;
+  left: 50%;
+  margin-left: -310px;
+  margin-top: -215px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75), inset 0 7px 0 #ee3643;
+}
+
+.cart-popup h2.headline-1 {
+  text-transform: none;
+}
+
+.green-check {
+  position: relative;
+  padding-left: 100px;
+}
+
+.green-check::before {
+  position: absolute;
+  content: '';
+  width: 66px;
+  height: 66px;
+  background-color: #63a63e;
+  border-radius: 50%;
+  top: -20px;
+  left: 0;
+}
+
+.green-check::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 35px;
+  top: -18px;
+  left: 22px;
+  border-radius: 1px;
+  box-shadow: 7px 7px 0 #ffffff;
+  transform: rotate(45deg);
+}
+
+.cart-popup .red-button:not(:first-child) {
+  margin-left: 20px;
+}
+
+.cart-popup .red-button {
+
+}
+
+.red-button+.color-white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Animation */
 
 @keyframes fade {
   0% { transform: scale(0); }

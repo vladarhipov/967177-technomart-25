@@ -6,9 +6,10 @@ var email = document.querySelector(".write-us input[name=email]");
 var namesername = document.querySelector(".write-us input[name=name-surname]");
 var comment = document.querySelector(".write-us textarea[name=comment]");
 
-var mappopup = document.querySelector(".modal-map");
-var maplink = document.querySelector(".show-map");
-var mapclose = document.querySelector(".modal-map .close-modal-button");
+var mapPopup = document.querySelector(".modal-map");
+var mapLink = document.querySelector(".show-map");
+var mapClose = document.querySelector(".modal-map .close-modal-button");
+
 
 
 var isStorageSupport = true;
@@ -25,20 +26,21 @@ try {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  namesername.value = storagename;
+  email.value = storagemail;
 
-  if (storagename) {
-    namesername.value = storagename;
-    email.value = storagemail;
-    email.focus();
-  } else {
-    namesername.focus();
-  }
-
-  if (storagemail) {
-    comment.focus();
-  } else {
-    email.focus();
-  }
+  // if (storagename) {
+  //   namesername.value = storagename;
+  //   email.value = storagemail;
+  //   email.focus();
+  // } else {
+ //    if (storagemail) {
+ //      comment.focus();
+ //    }
+ //   else {
+ //    email.focus();
+ // }
+  // }
 
 });
 
@@ -77,21 +79,21 @@ close.addEventListener("click", function (evt) {
 });
 
 
-maplink.addEventListener("click", function (evt) {
+mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mappopup.classList.add("modal-show");
+  mapPopup.classList.add("modal-show");
 });
 
-mapclose.addEventListener("click", function (evt) {
+mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mappopup.classList.remove("modal-show");
+  mapPopup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (mappopup.classList.contains("modal-show")) {
+    if (mapPopup.classList.contains("modal-show")) {
       evt.preventDefault();
-      mappopup.classList.remove("modal-show");
+      mapPopup.classList.remove("modal-show");
     }
   }
 });

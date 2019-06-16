@@ -346,13 +346,18 @@
       </div>
     </footer>
 
-    <section class="modal cart-popup">
-      <h2>Товар добавлен в корзину!</h2>
-      <a href="order.html" class="button">Оформить заказ</a>
-      <button type="button" name="modal-close-button" class="button">Продолжить покупки</button>
-      <button type="button" name="modal-close-button" class="close-btn visually-hidden">Закрыть</button>
+    <section class="modal cart-popup modal-show">
+      <div class="modal-content-wrapper">
+        <h2 class="headline-1 green-check">Товар добавлен в корзину!</h2>
+        <div class="bottom-gray-container">
+          <a href="order.html" class="red-button half-width-collumn">Оформить заказ</a>
+          <button type="button" name="modal-close-button" class="red-button color-white half-width-collumn">Продолжить покупки</button>
+        </div>
+      </div>
+      <button type="button" name="modal-close-button" class="close-modal-button"><span class="visually-hidden">Закрыть</span></button>
+
     </section>
 
-  <script type="text/javascript" async="" src="js/main.js"></script>
+  <script type="text/javascript" async="" src="js/cart-popup.js"></script>
   </body>
 </html>
