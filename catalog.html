@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>Перфораторы</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="cuprum-regular">
       <div class="bg-dark-blue">
-        <div class="header-top-row center-container">
+        <div class="header-top-row center-container full-section-collumn">
           <div class="header-top-row-left">
             <a href="index.html" class="nav-logo">
               <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
@@ -26,14 +27,14 @@
             </form>
           </div>
           <div class="header-top-row-right">
-            <a href="#" class="header-bookmark">Закладки <span class="header-bookmarks-number">0</span></a>
-            <a href="#" class="header-cart cart-full">Корзина <span class="header-cart-number">10</span></a>
+            <a href="#" class="header-bookmark">Закладки: <span class="header-bookmarks-number">0</span></a>
+            <a href="#" class="header-cart cart-full">Корзина: <span class="header-cart-number">10</span></a>
             <a href="#" class="header-order">Оформить заказ</a>
           </div>
         </div>
       </div>
       <div class="bg-gray">
-        <div class="center-container">
+        <div class="center-container full-section-collumn">
             <div class="header-middle-row">
               <span class="header-company-description cuprum-italic">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</span>
               <div class="header-contacts">
@@ -45,7 +46,7 @@
               <div class="header-account">
                 <div class="header-account-buttons">
                   <div class="user-entered header-username enter-button">
-                    <a href="#" class="">
+                    <a href="profile.html" class="">
                       <div class="user-entered-icon">
                         <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c5c5c5">
                             <path d="M17.881,14.166 C15.737,13.431 13.625,12.5 12.674,11.776 C12.017,11.275 11.904,10.158 12.157,9.361 C13.275,8.458 14.021,6.884 14.021,5.083 C14.021,2.276 12.221,0 10,0 C7.779,0 5.979,2.276 5.979,5.083 C5.979,6.884 6.725,8.457 7.842,9.36 C8.095,10.158 7.983,11.275 7.325,11.776 C6.375,12.5 4.262,13.43 2.118,14.166 C-0.026,14.902 -7.42029178e-06,18 -7.42029178e-06,18 L20.000013,18 C20.000013,18 20.025,14.901 17.881,14.166 Z" id="Path"></path>
@@ -53,12 +54,12 @@
                       </div>
                       <span>Равшан Джамшутович</span>
                     </a>
-                    <button name="quit" class="quit-button">
+                    <a href="quit.html" name="quit" class="quit-icon">
                       <svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c5c5c5">
                           <path d="M20,8.5 L11.125,17 L11.125,11 L5.125,11 L5.125,6 L11.125,6 L11.125,0 L20,8.5 Z M2.106,13.952 C2.124,14.327 2.277,15.01 3.116,15.01 L8.143,15.01 L8.143,17 L3.116,17 C0.938,17 0.112,15.189 0.087,13.973 L0.087,3.027 C0.112,1.81 0.938,0 3.116,0 L8.143,0 L8.143,1.991 L3.116,1.991 C2.277,1.991 2.124,2.672 2.106,3.048 L2.106,13.952 Z" id="Shape"></path>
                       </svg>
                       <span class="visually-hidden">Выйти</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <ul class="header-account-menu">
@@ -83,7 +84,7 @@
     </header>
 
     <main>
-    <div class="center-container">
+    <div class="center-container full-section-collumn">
       <section class="inner-page-title">
         <ul class="bread-crumbs">
           <li class="bread-crumbs-item">
@@ -98,16 +99,34 @@
           <li class="bread-crumbs-item"><a href="">Инструмент</a></li>
           <li class="bread-crumbs-item-current">Перформаторы</li>
         </ul>
-        <h1 class="headline-1 bg-gray">Перфораторы</h1>
+        <div class="big-headline-block bg-gray">
+          <h1 class="headline-1 blue-font">Перфораторы</h1>
+        </div>
       </section>
 
       <div class="catalog">
         <div class="catalog-filter">
-          <h2 class="visually-hidden">Фильтры товаров</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="small-headline-block bg-beige">
+            <h2>Фильтр</h2>
+          </div>
+          <form action="https://echo.htmlacademy.ru" method="get" oninput="minoutput.value=mincount.value, maxoutput.value=maxcount.value">
             <fieldset class="filter-price">
               <legend>Цена:</legend>
-                <!-- The price controles will appear here -->
+              <div class="price-contols bg-beige">
+                <div class="price-scale">
+                  <div class="scale-bar"></div>
+                  <div class="price-range price-range-min"></div>
+                  <div class="price-range price-range-max"></div>
+                </div>
+                <!-- <input type="range" id="minpcount" name="mincount" min="1" max="40000" step="1" class="price-range">
+                <input type="range" id="maxcount" name="maxcount" min="1" max="40000" step="1"> -->
+
+              </div>
+              <div class="output-fields">
+                <output name="minoutput" class="bg-beige">0</output>
+                <span> — </span>
+                <output name="maxoutput" class="bg-beige">30000</output>
+              </div>
             </fieldset>
             <hr>
             <fieldset class="filter-vendors">
@@ -133,17 +152,23 @@
         </div>
 
         <div class="catalog-items">
-          <div class="catalog-items-sort">
-            <h2 class="visually-hidden">Сортировка товаров</h2>
-            <div>Сортировка:</div>
-            <a href="#" class="catalog-items-sort-current">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По функционалу</a>
-            <a href="#" class="catalog-items-sort-up visually-hidden">По возрастанию</a>
-            <a href="#" class="catalog-items-sort-down visually-hidden">По убыванию</a>
+          <div class="catalog-items-sort small-headline-block bg-beige">
+            <h2>Сортировка:</h2>
+            <div class="sort-item">
+              <a href="#" class="current">По цене</a>
+            </div>
+            <div class="sort-item">
+              <a href="#">По типу</a>
+            </div>
+            <div class="sort-item">
+              <a href="#">По функционалу</a>
+            </div>
+            <div class="sort-item sort-triangles-wrapper">
+              <a href="#" class="sort-triangle sort-up current"><span class="visually-hidden">По возрастанию</span></a>
+              <a href="#" class="sort-triangle sort-down"><span class="visually-hidden">По убыванию</span></a>
+            </div>
           </div>
           <h2 class="visually-hidden">Товары</h2>
-
           <div class="shifting-left">
           <ul class="catalog-list">
             <li class="catalog-product-item">
@@ -171,7 +196,7 @@
               <button type="button" name="add-to-cart-button" class="price-button">25500 Р.</button>
             </li>
             <li class="catalog-product-item">
-              <div class="flag new-product-item">Новинка</div>
+              <div class="new-item"><span class="visually-hidden">Новинка</span></div>
               <ul class="product-buttons-on-hover">
                 <li><button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button></li>
                 <li><button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button></li>
@@ -196,7 +221,7 @@
               <button type="button" name="add-to-cart-button" class="price-button">15500 Р.</button>
             </li>
             <li class="catalog-product-item">
-              <div class="flag new-product-item">Новинка</div>
+              <div class="flag new-item ">Новинка</div>
               <ul class="product-buttons-on-hover">
                 <li><button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button></li>
                 <li><button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button></li>
@@ -221,7 +246,7 @@
               <button type="button" name="add-to-cart-button" class="price-button">12500 Р.</button>
             </li>
             <li class="catalog-product-item">
-              <div class="flag new-product-item">Новинка</div>
+              <div class="flag new-item ">Новинка</div>
               <ul class="product-buttons-on-hover">
                 <li><button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button></li>
                 <li><button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button></li>
@@ -246,7 +271,7 @@
               <button type="button" name="add-to-cart-button" class="price-button">25500 Р.</button>
             </li>
             <li class="catalog-product-item">
-              <div class="flag new-product-item">Новинка</div>
+              <div class="flag new-item">Новинка</div>
               <ul class="product-buttons-on-hover">
                 <li><button type="button" name="add-to-cart-button" class="add-to-cart-button">Купить</button></li>
                 <li><button type="button" name="add-to-cart-button" class="add-to-bookmarks-button">В закладки</button></li>
@@ -269,8 +294,9 @@
         </div>
       </div>
       </div>
+
       <article class="catalog-info bg-gray">
-        <div class="center-container">
+        <div class="center-container full-section-collumn">
           <h2 class="headline-1">Пара слов о перфораторах</h2>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
@@ -279,7 +305,7 @@
 
     <footer class="cuprum-regular bg-dark-blue">
       <div class="bg-blue">
-        <div class="footer-first-row center-container">
+        <div class="footer-first-row center-container full-section-collumn">
           <a href="index.html" class="nav-logo">
             <img class="footer-big-nav-logo" src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="136" height="21">
           </a>
@@ -293,7 +319,7 @@
             </ul>
           </nav>
         </div>
-        <div class="footer-second-row center-container">
+        <div class="footer-second-row center-container full-section-collumn">
           <address class="footer-address cuprum-regular">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </address>
@@ -307,7 +333,7 @@
           </nav>
         </div>
       </div>
-      <div class="footer-third-row center-container">
+      <div class="footer-third-row center-container full-section-collumn">
         <span class="footer-copyright">&#169; 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
         <ul class="footer-social-buttons">
           <li>
@@ -335,14 +361,16 @@
             </a>
           </li>
         </ul>
-        <div class="footer-feedback">
-          <b>Обратная связь:</b>
-          <a href="mailto:mail@htmlacademy.ru" class="footer-site-developer-link">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-site-developer">
-          <b>Разработано:</b>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-site-developer-link">htmlacademy.ru</a>
-        </div>
+        <ul class="feedback-and-site-developer">
+          <li>
+            <b>Обратная связь:</b> <br>
+            <a href="mailto:mail@htmlacademy.ru" class="footer-site-developer-link">mail@htmlacademy.ru</a>
+          </li>
+          <li class="">
+            <b>Разработано — </b> <br>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-site-developer-link">htmlacademy.ru</a>
+          </li>
+        </ul>
       </div>
     </footer>
 
@@ -350,8 +378,8 @@
       <div class="modal-content-wrapper">
         <h2 class="headline-1 green-check">Товар добавлен в корзину!</h2>
         <div class="bottom-gray-container">
-          <a href="order.html" class="red-button half-width-collumn">Оформить заказ</a>
-          <button type="button" name="modal-close-button" class="red-button color-white half-width-collumn">Продолжить покупки</button>
+          <a href="order.html" class="middle-button red-button half-modal-width">Оформить заказ</a>
+          <button type="button" name="modal-close-button" class="middle-button white-button half-modal-width">Продолжить покупки</button>
         </div>
       </div>
       <button type="button" name="modal-close-button" class="close-modal-button"><span class="visually-hidden">Закрыть</span></button>
