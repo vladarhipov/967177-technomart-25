@@ -333,15 +333,15 @@ a.header-cart:active::before {
   opacity: 0.5;
 }
 
-a.cart-full {
+a.item-added {
   background-color: #ee3643;
 }
 
-a.cart-full:hover {
+a.item-added:hover {
   background-color: #ca2c37;
 }
 
-a.cart-full:active {
+a.item-added:active {
   background-color: #ba2732;
 }
 
@@ -443,6 +443,7 @@ a.nav-logo::before {
 
 .header-search-input:focus ~ svg {
   fill: #ee3643;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -461,7 +462,9 @@ a.nav-logo::before {
   margin: 0;
   font-size: 16px;
   line-height: 23px;
+  font-weight: 400;
   color: #ee3643;
+  max-width: 260px;
 }
 
 .header-contacts {
@@ -654,7 +657,8 @@ ul.header-account-menu {
 
 .header-main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   min-height: 60px;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
@@ -666,12 +670,16 @@ ul.header-account-menu {
 }
 
 .header-main-navigation li {
-  align-self: center;
+  display: flex;
+  flex: 1 1 auto;
 }
 
 .header-main-navigation a {
+  display: block;
   color: #ffffff;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
   padding: 20px 30px;
 }
 
@@ -1735,6 +1743,7 @@ img.footer-big-nav-logo {
 }
 
 .footer-address {
+  flex-basis: 330px;
   margin: 0;
   font-size: 18px;
   line-height: 24px;
@@ -1818,7 +1827,7 @@ img.footer-big-nav-logo {
 
 .footer-copyright {
   display: inline-block;
-  min-width: 290px;
+  flex-basis: 290px;
 }
 
 .footer-social-buttons {
