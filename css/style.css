@@ -847,11 +847,11 @@ ul.header-account-menu {
 }
 
 .banner-perforators {
-  background: url("../upload/banners/perforators-promo.jpg") no-repeat;
+  background: url("../img/upload/banners/perforators-promo.jpg") no-repeat;
 }
 
 .banner-drills {
-  background: url("../upload/banners/drills-promo.jpg") no-repeat;
+  background: url("../img/upload/banners/drills-promo.jpg") no-repeat;
 }
 
 .vertical-banner-wrapper {
@@ -861,7 +861,7 @@ ul.header-account-menu {
 
 .banner-materials {
   background-color: #ffbf47;
-  background-image: url("../upload/banners/materials.svg");
+  background-image: url("../img/upload/banners/materials.svg");
   background-repeat: no-repeat;
   background-size: 44px 65px;
   background-position: 213px 31px;
@@ -869,7 +869,7 @@ ul.header-account-menu {
 
 .banner-tools {
   background-color: #3bbce3;
-  background-image: url("../upload/banners/tools.svg");
+  background-image: url("../img/upload/banners/tools.svg");
   background-repeat: no-repeat;
   background-size: 75px 61px;
   background-position: 197px 33px;
@@ -877,7 +877,7 @@ ul.header-account-menu {
 
 .banner-equipment {
   background-color: #dc91d8;
-  background-image: url("../upload/banners/equipment.svg");
+  background-image: url("../img/upload/banners/equipment.svg");
   background-repeat: no-repeat;
   background-size: 78px 62px;
   background-position: 191px 31px;
@@ -885,7 +885,7 @@ ul.header-account-menu {
 
 .banner-discounts {
   background-color: #8ed78f;
-  background-image: url("../upload/banners/discounts.svg");
+  background-image: url("../img/upload/banners/discounts.svg");
   background-repeat: no-repeat;
   background-size: 59px 72px;
   background-position: 196px 26px;
@@ -893,7 +893,7 @@ ul.header-account-menu {
 
 .banner-delivery {
   background-color: #ffbf47;
-  background-image: url("../upload/banners/delivery.svg");
+  background-image: url("../img/upload/banners/delivery.svg");
   background-repeat: no-repeat;
   background-size: 78px 63px;
   background-position: 191px 32px;
@@ -1041,16 +1041,16 @@ ul.vertical-tab-slider {
 }
 
 .vertical-tab-slide-delivery {
-  background-image: url("../upload/services-tab-slider/delivery.png");
+  background-image: url("../img/upload/services-tab-slider/delivery.png");
 
 }
 
 .vertical-tab-slide-guarantee {
-  background: url("../upload/services-tab-slider/guarantee.png") no-repeat;
+  background: url("../img/upload/services-tab-slider/guarantee.png") no-repeat;
 }
 
 .vertical-tab-slide-credit {
-  background: url("../upload/services-tab-slider/credit.png") no-repeat;
+  background: url("../img/upload/services-tab-slider/credit.png") no-repeat;
 }
 
 .vertical-tab-slide-delivery p {
