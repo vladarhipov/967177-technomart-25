@@ -11,7 +11,6 @@ var mapLink = document.querySelector(".show-map");
 var mapClose = document.querySelector(".modal-map .close-modal-button");
 
 
-
 var isStorageSupport = true;
 var storagename = "";
 var storagemail = "";

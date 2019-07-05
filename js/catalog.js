@@ -1,6 +1,6 @@
 var cartPopup = document.querySelector(".cart-popup");
 var cartLink = document.querySelectorAll(".add-to-cart-button");
-var cartClose = document.querySelector(".close-modal-button");
+var cartClose = document.querySelectorAll(".close-modal-button");
 var bookmarkButton = document.querySelectorAll(".add-to-bookmarks-button");
 
 var bookmarkLink = document.querySelector(".header-bookmark");
@@ -14,10 +14,12 @@ for (var i = 0; i < cartLink.length; i++) {
   });
 }
 
-cartClose.addEventListener("click", function (evt) {
+for (var i = 0; i < cartClose.length; i++) {
+cartClose[i].addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.remove("modal-show");
 });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

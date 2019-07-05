@@ -11,75 +11,86 @@
   <body>
     <header class="cuprum-regular">
       <div class="bg-dark-blue">
-        <div class="header-top-row center-container full-section-collumn">
-          <div class="header-top-row-left">
-            <a href="index.html" class="nav-logo">
-              <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
-            </a>
-            <form class="header-search">
-              <button type="button" name="search" class="search-btn">
-                <span class="visually-hidden">Искать</span>
-              </button>
-              <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path d="M17,15.586 L13.458,12.044 C14.421,10.782 15,9.21 15,7.5 C15,3.358 11.643,0 7.5,0 C3.358,0 0,3.358 0,7.5 C0,11.643 3.358,15 7.5,15 C9.21,15 10.782,14.421 12.044,13.458 L15.586,17 L17,15.586 Z M2,7.5 C2,4.467 4.467,2 7.5,2 C10.532,2 13,4.467 13,7.5 C13,10.532 10.532,13 7.5,13 C4.467,13 2,10.532 2,7.5 Z"></path>
-              </svg>
-              <label for="header-search-id" class="visually-hidden">Поиск </label>
-              <input type="text" name="header-search" id="header-search-id" placeholder="Поиск:" class="header-search-input cuprum-regular">
-            </form>
-          </div>
-          <div class="header-top-row-right">
-            <a href="#" class="header-bookmark">Закладки: <span class="header-bookmarks-number">0</span></a>
-            <a href="#" class="header-cart">Корзина: <span class="header-cart-number">10</span></a>
-            <a href="#" class="header-order">Оформить заказ</a>
+        <div class="full-section-collumn center-container">
+          <div class="header-top-row">
+            <div class="header-top-row-left">
+              <a href="index.html" class="nav-logo">
+                <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
+              </a>
+              <form class="header-search">
+                <button type="button" name="search" class="search-btn">
+                  <span class="visually-hidden">Искать</span>
+                </button>
+                <label for="header-search-id" class="visually-hidden">Поиск:</label>
+                <input type="text" name="header-search" id="header-search-id" placeholder="Поиск:" class="header-search-input cuprum-regular">
+                <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M17,15.586 L13.458,12.044 C14.421,10.782 15,9.21 15,7.5 C15,3.358 11.643,0 7.5,0 C3.358,0 0,3.358 0,7.5 C0,11.643 3.358,15 7.5,15 C9.21,15 10.782,14.421 12.044,13.458 L15.586,17 L17,15.586 Z M2,7.5 C2,4.467 4.467,2 7.5,2 C10.532,2 13,4.467 13,7.5 C13,10.532 10.532,13 7.5,13 C4.467,13 2,10.532 2,7.5 Z"></path>
+                </svg>
+              </form>
+            </div>
+            <div class="header-top-row-right">
+              <a href="#" class="header-bookmark">Закладки: <span class="header-bookmarks-number">0</span></a>
+              <a href="#" class="header-cart">Корзина: <span class="header-cart-number">10</span></a>
+              <a href="#" class="header-order">Оформить заказ</a>
+            </div>
           </div>
         </div>
+
       </div>
       <div class="bg-gray">
-        <div class="center-container full-section-collumn">
+        <div class="center-container">
             <div class="header-middle-row">
-              <span class="header-company-description cuprum-italic">Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</span>
-              <div class="header-contacts">
-                <a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
-                <address class="header-address">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                </address>
+              <div class="one-thirds-section-collumn">
+                <div class="header-company-description cuprum-italic">Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</div>
               </div>
-              <div class="header-account">
-                <div class="header-account-buttons">
-                  <div class="user-entered header-username enter-button">
-                    <a href="profile.html" class="">
-                      <div class="user-entered-icon">
-                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c5c5c5">
-                            <path d="M17.881,14.166 C15.737,13.431 13.625,12.5 12.674,11.776 C12.017,11.275 11.904,10.158 12.157,9.361 C13.275,8.458 14.021,6.884 14.021,5.083 C14.021,2.276 12.221,0 10,0 C7.779,0 5.979,2.276 5.979,5.083 C5.979,6.884 6.725,8.457 7.842,9.36 C8.095,10.158 7.983,11.275 7.325,11.776 C6.375,12.5 4.262,13.43 2.118,14.166 C-0.026,14.902 -7.42029178e-06,18 -7.42029178e-06,18 L20.000013,18 C20.000013,18 20.025,14.901 17.881,14.166 Z"></path>
-                        </svg>
-                      </div>
-                      <span>Равшан Джамшутович</span>
-                    </a>
-                    <a href="quit.html" class="quit-icon">
-                      <svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c5c5c5">
-                          <path d="M20,8.5 L11.125,17 L11.125,11 L5.125,11 L5.125,6 L11.125,6 L11.125,0 L20,8.5 Z M2.106,13.952 C2.124,14.327 2.277,15.01 3.116,15.01 L8.143,15.01 L8.143,17 L3.116,17 C0.938,17 0.112,15.189 0.087,13.973 L0.087,3.027 C0.112,1.81 0.938,0 3.116,0 L8.143,0 L8.143,1.991 L3.116,1.991 C2.277,1.991 2.124,2.672 2.106,3.048 L2.106,13.952 Z" id="Shape"></path>
-                      </svg>
-                      <span class="visually-hidden">Выйти</span>
-                    </a>
-                  </div>
+              <div class="one-thirds-section-collumn">
+                <div class="header-contacts">
+                  <a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
+                  <address class="header-address">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  </address>
                 </div>
-                <ul class="header-account-menu">
-                    <li><a href="#">Заказы</a></li>
-                    <li><a href="#">Личный кабинет</a></li>
+              </div>
+              <div class="one-thirds-section-collumn">
+                <div class="header-account">
+                  <div class="header-account-buttons">
+                    <div class="user-entered header-username enter-button">
+                      <a href="profile.html" class="">
+                        <div class="user-entered-icon">
+                          <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c5c5c5">
+                              <path d="M17.881,14.166 C15.737,13.431 13.625,12.5 12.674,11.776 C12.017,11.275 11.904,10.158 12.157,9.361 C13.275,8.458 14.021,6.884 14.021,5.083 C14.021,2.276 12.221,0 10,0 C7.779,0 5.979,2.276 5.979,5.083 C5.979,6.884 6.725,8.457 7.842,9.36 C8.095,10.158 7.983,11.275 7.325,11.776 C6.375,12.5 4.262,13.43 2.118,14.166 C-0.026,14.902 -7.42029178e-06,18 -7.42029178e-06,18 L20.000013,18 C20.000013,18 20.025,14.901 17.881,14.166 Z"></path>
+                          </svg>
+                        </div>
+                        <span>Равшан Джамшутович</span>
+                      </a>
+                      <a href="quit.html" class="quit-icon">
+                        <svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c5c5c5">
+                            <path d="M20,8.5 L11.125,17 L11.125,11 L5.125,11 L5.125,6 L11.125,6 L11.125,0 L20,8.5 Z M2.106,13.952 C2.124,14.327 2.277,15.01 3.116,15.01 L8.143,15.01 L8.143,17 L3.116,17 C0.938,17 0.112,15.189 0.087,13.973 L0.087,3.027 C0.112,1.81 0.938,0 3.116,0 L8.143,0 L8.143,1.991 L3.116,1.991 C2.277,1.991 2.124,2.672 2.106,3.048 L2.106,13.952 Z" id="Shape"></path>
+                        </svg>
+                        <span class="visually-hidden">Выйти</span>
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="header-account-menu">
+                      <li><a href="#">Мои заказы</a></li>
+                      <li><a href="#">Личный кабинет</a></li>
                   </ul>
               </div>
+              </div>
           </div>
-          <nav class="header-bottom-row">
-            <ul class="header-main-navigation main-navigation">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="company.html">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="promo.html">Спецпредложения</a></li>
-              <li><a href="delivery.html">Доставка</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
+          <div class="full-section-collumn">
+            <nav class="header-bottom-row">
+              <ul class="header-main-navigation main-navigation">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="company.html">Компания</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="promo.html">Спецпредложения</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -108,7 +119,7 @@
       <div class="catalog">
         <div class="catalog-filter">
           <div class="small-headline-block bg-beige">
-            <h2>Фильтр</h2>
+            <h2>Фильтр:</h2>
           </div>
           <form action="https://echo.htmlacademy.ru" method="get" oninput="minoutput.value=mincount.value, maxoutput.value=maxcount.value">
             <fieldset class="filter-price">
@@ -178,8 +189,8 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
-                <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
+                <img src="img/upload/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
+                <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
                 <span class="old-price">22500 Р.</span>
               </a>
               <button type="button" name="add-to-cart-button" class="price-button">15500 Р.</button>
@@ -190,7 +201,7 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
+                <img src="img/upload/catalog/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
                 <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
                 <span class="old-price">30500 Р.</span>
               </a>
@@ -203,7 +214,7 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
+                <img src="img/upload/catalog/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
                 <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
                 <span class="old-price"> </span>
               </a>
@@ -215,8 +226,8 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
-                <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
+                <img src="img/upload/catalog/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
+                <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
                 <span class="old-price">22500 Р.</span>
               </a>
               <button type="button" name="add-to-cart-button" class="price-button">15500 Р.</button>
@@ -228,7 +239,7 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
+                <img src="img/upload/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
                 <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
                 <span class="old-price">30500 Р.</span>
               </a>
@@ -240,7 +251,7 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
+                <img src="img/upload/catalog/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
                 <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
                 <span class="old-price"> </span>
               </a>
@@ -253,8 +264,8 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
-                <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
+                <img src="img/upload/catalog/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="product-item-image">
+                <h3 class="product-item-name">Перфоратор BOSCH BFG 3000</h3>
                 <span class="old-price">22500 Р.</span>
               </a>
               <button type="button" name="add-to-cart-button" class="price-button">15500 Р.</button>
@@ -265,7 +276,7 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
+                <img src="img/upload/catalog/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="product-item-image">
                 <h3 class="product-item-name">Перфоратор BOSCH BFG 6000</h3>
                 <span class="old-price">30500 Р.</span>
               </a>
@@ -278,7 +289,7 @@
                 <li><button type="button" name="add-to-bookmarks-button" class="add-to-bookmarks-button">В закладки</button></li>
               </ul>
               <a href="#">
-                <img src="img/upload/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
+                <img src="img/upload/catalog/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="product-item-image">
                 <h3 class="product-item-name">Перфоратор BOSCH BFG 2000</h3>
                 <span class="old-price"> </span>
               </a>
@@ -334,9 +345,12 @@
           </nav>
         </div>
       </div>
-      <div class="footer-third-row center-container full-section-collumn">
-        <span class="footer-copyright">&#169; 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
-        <ul class="footer-social-buttons">
+      <div class="footer-third-row center-container">
+        <div class="one-thirds-section-collumn">
+          <span class="footer-copyright">&#169; 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
+        </div>
+        <div class="one-thirds-section-collumn">
+          <ul class="footer-social-buttons">
           <li>
             <a href="#" class="social-btn social-btn-vk">
               <span class="visually-hidden">Вконтакте</span>
@@ -362,16 +376,19 @@
             </a>
           </li>
         </ul>
-        <ul class="feedback-and-site-developer">
-          <li>
-            <b>Обратная связь:</b> <br>
-            <a href="mailto:mail@htmlacademy.ru" class="footer-site-developer-link">mail@htmlacademy.ru</a>
-          </li>
-          <li class="">
-            <b>Разработано — </b> <br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-site-developer-link">htmlacademy.ru</a>
-          </li>
-        </ul>
+        </div>
+        <div class="one-thirds-section-collumn">
+          <ul class="feedback-and-site-developer">
+            <li>
+              <b>Обратная связь:</b> <br>
+              <a href="mailto:mail@htmlacademy.ru" class="footer-site-developer-link">mail@htmlacademy.ru</a>
+            </li>
+            <li class="">
+              <b>Разработано — </b> <br>
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-site-developer-link">htmlacademy.ru</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 
