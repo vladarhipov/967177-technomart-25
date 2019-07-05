@@ -2027,9 +2027,12 @@ img.footer-big-nav-logo {
 
 .modal-map img,
 .modal-map iframe {
+  position: absolute;
   width: 940px;
   height: 446px;
+  border: none;
 }
+
 
 /* Modal Catalog */
 
@@ -2041,7 +2044,8 @@ img.footer-big-nav-logo {
   left: 50%;
   margin-left: -310px;
   margin-top: -215px;
-  background: #ffffff;
+  background: #ffffff;  ифслпкщгтвЖ #ffffff;
+
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75), inset 0 7px 0 #ee3643;
 }
 
